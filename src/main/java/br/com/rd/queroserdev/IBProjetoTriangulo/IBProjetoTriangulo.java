@@ -77,6 +77,7 @@ public class IBProjetoTriangulo extends HttpServlet {
 		}
 	
 
+	//	VERIFICA VALOR INVALIDO
 		
 	if(x == 0 && y == 0 && z == 0) {
 		response.getWriter().println("Insira algum valor");
