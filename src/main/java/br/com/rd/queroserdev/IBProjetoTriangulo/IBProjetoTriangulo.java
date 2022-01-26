@@ -27,7 +27,7 @@ public class IBProjetoTriangulo extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+	//	response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
@@ -36,6 +36,27 @@ public class IBProjetoTriangulo extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+		
+		int x, y, z;
+		
+		x = Integer.parseInt(request.getParameter("lado1"));
+		y = Integer.parseInt(request.getParameter("lado2"));
+		z = Integer.parseInt(request.getParameter("lado3"));
+		
+		
+		if (x == y && x == z){
+			response.getWriter().println("Três lados iguais. É um Triangulo Equilatero");
+		}else if(x == y || x == z || y == z){
+			response.getWriter().println("Dois lados iguais. É um Triangulo Isosceles");
+			}else {
+			response.getWriter().println("Três lados diferentes. É um Triangulo Escaleno");
+			}
+
+		
+		
+		
+		
 	}
+
 
 }
