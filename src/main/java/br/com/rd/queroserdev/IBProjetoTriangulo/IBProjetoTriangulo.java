@@ -75,10 +75,15 @@ public class IBProjetoTriangulo extends HttpServlet {
 		}else if(x == 0 && z == 0 && y > 0 ) {
 			response.getWriter().println("É uma reta");
 		}
+	
+
+		
+	if(x == 0 && y == 0 && z == 0) {
+		response.getWriter().println("Insira algum valor");
 	}
 }
 		
-	
+	}
 
 
 
