@@ -1,8 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Verifica triangulo.</title>
+<title>Verifica triangulo</title>
+</head>
 <link rel="stylesheet" href="webjars/bootstrap/5.1.3/css/bootstrap.min.css">
 </head>
 <body>
@@ -11,17 +14,17 @@
 <h1>Triangulo</h1>
   <div class="mb-3 col-3">
     <label for="exampleInputEmail1" class="form-label">Lado 1 :</label>
-    <input type="number" name="lado1" >
+    <input type="text" name="lado1" >
     
   </div>
   <div class="mb-3 col-3" >
     <label for="exampleInputPassword1" class="form-label">Lado 2 :</label>
-    <input type="number" name="lado2">
+    <input type="text" name="lado2">
   </div>
  
   <div class="mb-3 col-3" >
     <label for="exampleInputPassword1" class="form-label">Lado 3 :</label>
-    <input type="number" name="lado3">
+    <input type="text" name="lado3">
   </div>
   
   <button type="reset" class="btn btn-secondary">Limpar</button>
